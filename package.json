@@ -7,7 +7,7 @@
     "test": "mocha",
     "client:watch": "webpack --watch --progress --colors --hot --inline",
     "gulp:watch": "gulp watch",
-    "server:watch": "nodemon --ignore server/public --exec 'babel-node --' server/index.js",
+    "server:watch": "nodemon --ignore client --ignore server/public --exec 'babel-node --' server/index.js",
     "watch": "concurrently -r --kill-others 'npm run client:watch' 'npm run gulp:watch' 'npm run server:watch'"
   },
   "repository": {

@@ -1,0 +1,8 @@
+# Node files
+node_modules/
+
+# special files
+.env
+
+# build folders
+server/public
